@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>62cfeda9-3445-4b7c-b760-9d00adb878cf</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="9.0.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.2" />
+  </ItemGroup>
+
+</Project>
