@@ -7,6 +7,8 @@ Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "GalileoNet.Portal.WebApp", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalileoNet.Portal.API", "GalileoNet.Portal.API\GalileoNet.Portal.API.csproj", "{AD82EDE0-4B09-4DA4-A2C4-A929C81B1B86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalileoNet.Portal.Domain", "GalileoNet.Portal.Domain\GalileoNet.Portal.Domain.csproj", "{014A85B4-B893-4D31-85FD-349D9EE09316}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{AD82EDE0-4B09-4DA4-A2C4-A929C81B1B86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD82EDE0-4B09-4DA4-A2C4-A929C81B1B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD82EDE0-4B09-4DA4-A2C4-A929C81B1B86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{014A85B4-B893-4D31-85FD-349D9EE09316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{014A85B4-B893-4D31-85FD-349D9EE09316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{014A85B4-B893-4D31-85FD-349D9EE09316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{014A85B4-B893-4D31-85FD-349D9EE09316}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
