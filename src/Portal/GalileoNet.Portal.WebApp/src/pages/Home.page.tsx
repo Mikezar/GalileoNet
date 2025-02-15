@@ -1,11 +1,9 @@
-import { ColorSchemeToggle } from "../components/ColorSchemeToggle/ColorSchemeToggle";
-import { Welcome } from "../components/Welcome/Welcome";
+import { Apod } from "../components/Apod/Apod";
 
 export function HomePage() {
   return (
     <>
-      <Welcome />
-      <ColorSchemeToggle />
+      <Apod />
     </>
   );
 }

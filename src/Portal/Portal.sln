@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalileoNet.Portal.API", "Ga
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalileoNet.Portal.Domain", "GalileoNet.Portal.Domain\GalileoNet.Portal.Domain.csproj", "{014A85B4-B893-4D31-85FD-349D9EE09316}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalileoNet.Portal.Shared", "GalileoNet.Portal.Shared\GalileoNet.Portal.Shared.csproj", "{036923F9-6C85-4BDF-BEAA-BC5CDF3B1F35}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{014A85B4-B893-4D31-85FD-349D9EE09316}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{014A85B4-B893-4D31-85FD-349D9EE09316}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{014A85B4-B893-4D31-85FD-349D9EE09316}.Release|Any CPU.Build.0 = Release|Any CPU
+		{036923F9-6C85-4BDF-BEAA-BC5CDF3B1F35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036923F9-6C85-4BDF-BEAA-BC5CDF3B1F35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036923F9-6C85-4BDF-BEAA-BC5CDF3B1F35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036923F9-6C85-4BDF-BEAA-BC5CDF3B1F35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
