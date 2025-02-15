@@ -1,11 +1,13 @@
 import "@mantine/core/styles.css";
+import "./style.css";
 import { MantineProvider } from "@mantine/core";
 import { Router } from "./Router";
-import { theme } from "./theme";
+import { shadcnTheme } from "./theme";
+import { shadcnCssVariableResolver } from "./cssVariableResolver";
 
 function App() {
     return (
-      <MantineProvider forceColorScheme="light" theme={theme}>
+      <MantineProvider forceColorScheme="dark" theme={shadcnTheme} cssVariablesResolver={shadcnCssVariableResolver}>
         <Router />
       </MantineProvider>
     );
