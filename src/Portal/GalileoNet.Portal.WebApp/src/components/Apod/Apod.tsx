@@ -1,5 +1,5 @@
-import { Grid, Box, Image, Group, Paper, Stack, ThemeIcon, Container, Divider, NavLink, Text, Title, Center, Button } from '@mantine/core';
-import { useEffect, useState } from 'react';
+import { Grid, Box, Image, Group, NavLink, Stack, ThemeIcon, Container, Text, Title, Center, Paper } from '@mantine/core';
+import { useEffect, useState } from 'react'
 import { IconHome2, IconRocket, IconCopyright } from '@tabler/icons-react';
 
 interface ApodData {
@@ -69,38 +69,34 @@ export function Apod()
                     <Group gap={"xs"}>
                         <IconCopyright style={{ width: 20, height: 20 }} />
                         <Text size="xs" c="bold" maw={300}>
-                            Copyright: {apodData.copyright}
+                            {apodData.copyright}
                         </Text>
                     </Group>
                     </Stack>
                 </Grid.Col>
 
+                {apodData.mediaType === 'image' ? 
                 <Grid.Col span={{ base: 12, md: 6 }}>
                     <Image
-                    mih={320}
-                    radius="md"
-                    p="xs"
-                    src={apodData.hdUrl} 
-                    fit="contain"
-                    ></Image>
-                </Grid.Col>
+                        mih={320}
+                        radius="md"
+                        p="xs"
+                        src={apodData.hdUrl} 
+                        fit="contain"
+                        ></Image>
+                </Grid.Col> : 
+                <Grid.Col span={{ base: 12, md: 6 }}>
+                    <Paper mih={320} p="s" radius="md">
+                        <iframe
+                            src={apodData.url}
+                            style={{ border: 0, width: '100%', minHeight: '450px' }}
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        />
+                    </Paper>
+                </Grid.Col> }
             </Grid>
       </Container>
-
-        {/* <Container size="xl" py={120} style={{margin: 30}}>
-            <Grid justify="center" align="flex-start">
-                <Grid.Col span={8}>
-                    <Image radius="md" src={apodData.hdUrl} fit="contain" />  
-                </Grid.Col>
-                <Grid.Col span={4}>
-                    <Title order={1}>{apodData.title}</Title>
-                    <Divider my="md" />
-                    <Text size="md">{apodData.explanation}</Text>
-                    <Divider my="md" />
-                    <Text size="xs" fw={700}>Copyright: {apodData.copyright}, {apodData.date.toLocaleString("en-GB")}</Text>
-                </Grid.Col>
-            </Grid>
-        </Container> */}
     </Box>
     return (contents);
 }
