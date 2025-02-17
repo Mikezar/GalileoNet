@@ -1,4 +1,4 @@
-using GalileoNet.Portal.Domain;
+using GalileoNet.WebService.Domain;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);

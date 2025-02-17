@@ -1,4 +1,4 @@
-﻿namespace GalileoNet.Portal.Domain.APOD;
+﻿namespace GalileoNet.WebService.Domain.APOD;
 
 public record ApodModel(
     string Title,

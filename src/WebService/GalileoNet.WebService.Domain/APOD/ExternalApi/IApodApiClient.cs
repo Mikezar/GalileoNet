@@ -1,4 +1,4 @@
-﻿namespace GalileoNet.Portal.Domain.APOD.ExternalApi;
+﻿namespace GalileoNet.WebService.Domain.APOD.ExternalApi;
 
 public interface IApodApiClient
 {

@@ -1,6 +1,6 @@
-﻿using GalileoNet.Portal.Shared.Caching;
+﻿using GalileoNet.WebService.Shared.Caching;
 
-namespace GalileoNet.Portal.Domain.APOD;
+namespace GalileoNet.WebService.Domain.APOD;
 
 public sealed class ApodServiceDecorator : IApodService
 {

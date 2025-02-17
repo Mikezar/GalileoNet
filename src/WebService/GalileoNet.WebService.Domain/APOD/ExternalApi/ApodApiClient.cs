@@ -1,7 +1,7 @@
-﻿using Microsoft.Extensions.Options;
-using System.Text.Json;
+﻿using System.Text.Json;
+using Microsoft.Extensions.Options;
 
-namespace GalileoNet.Portal.Domain.APOD.ExternalApi;
+namespace GalileoNet.WebService.Domain.APOD.ExternalApi;
 
 internal sealed class ApodApiClient : IApodApiClient
 {

@@ -1,11 +1,11 @@
-﻿using GalileoNet.Portal.Domain.APOD;
-using GalileoNet.Portal.Domain.APOD.ExternalApi;
-using GalileoNet.Portal.Shared;
+﻿using GalileoNet.WebService.Domain.APOD;
+using GalileoNet.WebService.Domain.APOD.ExternalApi;
+using GalileoNet.WebService.Shared;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 
-namespace GalileoNet.Portal.Domain;
+namespace GalileoNet.WebService.Domain;
 
 public static class ServiceCollections
 {

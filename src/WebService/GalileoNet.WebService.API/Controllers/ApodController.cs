@@ -1,7 +1,7 @@
-using GalileoNet.Portal.Domain.APOD;
+using GalileoNet.WebService.Domain.APOD;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GalileoNet.Portal.API.Controllers;
+namespace GalileoNet.WebService.API.Controllers;
 
 [ApiController]
 [Route("apod")]

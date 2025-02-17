@@ -1,6 +1,6 @@
-﻿using GalileoNet.Portal.Domain.APOD.ExternalApi;
+﻿using GalileoNet.WebService.Domain.APOD.ExternalApi;
 
-namespace GalileoNet.Portal.Domain.APOD;
+namespace GalileoNet.WebService.Domain.APOD;
 
 public sealed class ApodService : IApodService
 {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace GalileoNet.Portal.Shared.Caching;
+namespace GalileoNet.WebService.Shared.Caching;
 
 public class MemoryCacheConfiguration
 {

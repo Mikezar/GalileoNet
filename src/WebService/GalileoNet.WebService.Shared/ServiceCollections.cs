@@ -1,7 +1,7 @@
-﻿using GalileoNet.Portal.Shared.Caching;
+﻿using GalileoNet.WebService.Shared.Caching;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace GalileoNet.Portal.Shared;
+namespace GalileoNet.WebService.Shared;
 
 public static class ServiceCollections
 {

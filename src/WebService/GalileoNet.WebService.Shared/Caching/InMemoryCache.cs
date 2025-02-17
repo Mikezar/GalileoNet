@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Caching.Memory;
 
-namespace GalileoNet.Portal.Shared.Caching;
+namespace GalileoNet.WebService.Shared.Caching;
 
 internal sealed class InMemoryCache<TData> : ICache<TData>
 {
