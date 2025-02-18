@@ -1,4 +1,4 @@
-import { Grid, Box, Image, Group, NavLink, Stack, ThemeIcon, Container, Text, Title, Center, Paper, AspectRatio } from '@mantine/core';
+import { Grid, Box, Image, Flex, Group, NavLink, Stack, ThemeIcon, Container, Text, Title, Center, Paper, AspectRatio } from '@mantine/core';
 import { useEffect, useState } from 'react'
 import { IconHome2, IconRocket, IconCopyright } from '@tabler/icons-react';
 
@@ -41,7 +41,7 @@ export function Apod()
                 />
             </Container>
         </Center>
-        <Container size="xl" py={120}>
+        <Container mah={350} size="xl" py={100}>
             <Grid gutter={20} align="center">
                 <Grid.Col span={{ base: 12, md: 6 }}>
                     <Stack gap="xl">
