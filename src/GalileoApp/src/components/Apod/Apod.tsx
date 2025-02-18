@@ -21,7 +21,8 @@ export function Apod()
     }, []);
 
     async function loadApodData() {
-        const response = await fetch('/api/apod/data');
+        const url = import.meta.env.VITE_API_URL;
+        const response = await fetch(`${url}/api/apod/data`);
 
         if (response.ok) {
             const data = await response.json();
