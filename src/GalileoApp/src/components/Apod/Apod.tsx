@@ -1,4 +1,4 @@
-import { Grid, Box, Image, Group, NavLink, Stack, ThemeIcon, Container, Text, Title, Center, Paper } from '@mantine/core';
+import { Grid, Box, Image, Group, NavLink, Stack, ThemeIcon, Container, Text, Title, Center, Paper, AspectRatio } from '@mantine/core';
 import { useEffect, useState } from 'react'
 import { IconHome2, IconRocket, IconCopyright } from '@tabler/icons-react';
 
@@ -76,17 +76,19 @@ export function Apod()
                 </Grid.Col>
 
                 {apodData.mediaType === 'image' ? 
-                <Grid.Col span={{ base: 12, md: 6 }}>
-                    <Image
-                        mih={320}
-                        radius="md"
-                        p="xs"
-                        src={apodData.hdUrl} 
-                        fit="contain"
-                        ></Image>
+                <Grid.Col span={{ base: 12, md: 6 }} mih={320}>
+                    <AspectRatio>
+                        <Image
+                            mih={320}
+                            radius="md"
+                            p="xs"
+                            src={apodData.hdUrl} 
+                            fit="contain"
+                            ></Image>
+                     </AspectRatio>
                 </Grid.Col> : 
                 <Grid.Col span={{ base: 12, md: 6 }}>
-                    <Paper mih={320} p="s" radius="md">
+                    <Paper mih={320} p="s">
                         <iframe
                             src={apodData.url}
                             style={{ border: 0, width: '100%', minHeight: '450px' }}
