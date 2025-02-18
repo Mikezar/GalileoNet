@@ -11,6 +11,9 @@
     "prettier": "prettier --check \"**/*.{ts,tsx}\"",
     "prettier:write": "prettier --write \"**/*.{ts,tsx}\""
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "@mantine/core": "7.16.3",
     "@mantine/hooks": "7.16.3",
