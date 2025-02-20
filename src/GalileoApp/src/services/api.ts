@@ -1,6 +1,6 @@
 import { ApodData } from "../types";
 
-const url = import.meta.env.VITE_API_URL;
+const url = import.meta.env.VITE_API_URL || '';
 
 export const fetchApodData = async (): Promise<ApodData> => {
     const response = await fetch(`${url}/api/apod/data`);
