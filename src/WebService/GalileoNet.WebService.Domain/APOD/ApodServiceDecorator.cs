@@ -15,8 +15,9 @@ public sealed class ApodServiceDecorator : IApodService
         _cache = cache;
     }
 
-    public async Task<ApodModel> GetData()
+    public async Task<ApodModel> GetData(DateOnly date)
     {
-        return await _cache.GetOrAdd(CacheKey, DateTime.Today.AddDays(1), _apodService.GetData);
+        var formattedKey = $"{CacheKey}_{date.ToString()}";
+        return await _cache.GetOrAdd(formattedKey, DateTime.Today.AddDays(1), () => _apodService.GetData(date));
     }
 }

@@ -11,9 +11,9 @@ public sealed class ApodService : IApodService
         _apodApiClient = apodApiClient;
     }
 
-    public async Task<ApodModel> GetData()
+    public async Task<ApodModel> GetData(DateOnly date)
     {
-        var data = await _apodApiClient.GetData();
+        var data = await _apodApiClient.GetData(date);
 
         return new ApodModel(data.Title, data.Explanation, data.MediaType, data.Copyright, data.Url, data.HDUrl,
             data.Date);

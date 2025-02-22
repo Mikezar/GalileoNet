@@ -2,5 +2,5 @@
 
 public interface IApodService
 {
-    Task<ApodModel> GetData();
+    Task<ApodModel> GetData(DateOnly date);
 }

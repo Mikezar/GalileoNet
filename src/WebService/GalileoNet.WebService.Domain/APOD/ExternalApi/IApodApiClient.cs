@@ -2,5 +2,5 @@
 
 public interface IApodApiClient
 {
-    Task<ApodResponse> GetData();
+    Task<ApodResponse> GetData(DateOnly date);
 }

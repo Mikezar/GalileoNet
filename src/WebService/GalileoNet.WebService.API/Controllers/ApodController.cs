@@ -17,9 +17,10 @@ public class ApodController : ControllerBase
     }
 
     [HttpGet("data")]
-    public async Task<ApodModel> Get()
+    public async Task<ApodModel> Get(DateOnly? date = null)
     {
-        var apodModel = await _apodService.GetData();
+        var searchDate = date ?? DateOnly.FromDateTime(DateTime.Today);
+        var apodModel = await _apodService.GetData(searchDate);
         return apodModel;
     }
 }

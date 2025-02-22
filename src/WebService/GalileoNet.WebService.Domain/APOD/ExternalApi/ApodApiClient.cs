@@ -16,9 +16,10 @@ internal sealed class ApodApiClient : IApodApiClient
         _apodApiOptions = apodApiOptions.Value;
     }
 
-    public async Task<ApodResponse> GetData()
+    public async Task<ApodResponse> GetData(DateOnly date)
     {
-        var response = await _httpClient.GetAsync($"{ApodApi}?api_key={_apodApiOptions.ApiKey}");
+        var formattedDate = date.ToString("yyyy-MM-d");
+        var response = await _httpClient.GetAsync($"{ApodApi}?api_key={_apodApiOptions.ApiKey}&date={formattedDate}");
 
         response.EnsureSuccessStatusCode();
         var content = await response.Content.ReadAsStringAsync();

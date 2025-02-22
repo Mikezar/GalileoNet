@@ -1,13 +1,19 @@
 import { ApodData } from "../types";
 
-const url = import.meta.env.VITE_API_URL || '';
+const url = import.meta.env.VITE_API_URL || "";
 
-export const fetchApodData = async (): Promise<ApodData> => {
-    const response = await fetch(`${url}/api/apod/data`);
+export const fetchApodData = async (date: Date | null): Promise<ApodData> => {
+  let query = `${url}/api/apod/data`;
 
-    if (!response.ok) {
-        throw new Error("Failed to fetch the APOD data from the server");
-    }
+  if (date) {
+    query = `${query}?date=${date.toDateString()}`;
+  }
 
-    return response.json();
+  const response = await fetch(query);
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch the APOD data from the server");
+  }
+
+  return response.json();
 };

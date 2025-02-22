@@ -4,7 +4,7 @@ import { Menu } from "../components/Menu/Menu";
 
 export function HomePage() {
   return (
-    <Box style={{margin: 15}}>
+    <Box style={{ margin: 15 }}>
       <Menu />
       <Apod />
     </Box>
